@@ -8,6 +8,9 @@ body {
 h1 {
   text-align: center;
 }
+p {
+  text-align: center;
+}
 .desc {
   text-align: center;
 }
@@ -15,9 +18,24 @@ h1 {
 textarea, input, select {
   font-family: Courier New;
 }
-  
-
 label {
   display: block;
   margin: 0.5rem 0;
+  text-align: center;
+}
+textarea {
+  display: block;
+
+}
+.survey textarea {
+  display: block;  
+  margin: auto; 
+  width: 80%; 
+}
+form {
+width: 60vw;
+  max-width: 450px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }

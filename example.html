@@ -9,6 +9,7 @@
     <h1 id="title">Survey Form or ambot</h1>
     <p id="description">Message message ni ha</p>
     
+     <fieldset>
     <form id="survey-form">
         <label id="name-label" for="name">Name:</label>
         <input id="name" type="text" placeholder="Enter your name" required>
@@ -20,32 +21,39 @@
         
         <label id="number-label" for="number">Age:</label>
         <input id="number" type="number" placeholder="Enter your age" min="18" max="100" required>
+  </fieldset>
         <br>
-        
+         <fieldset>
         <label for="dropdown">Select an option:</label>
         <select id="dropdown">
             <option value="option1">Papilia</option>
             <option value="option2">Ug option</option>
         </select>
-        <br>
-        
+         </fieldset>
+          <br>
+              <fieldset>
         <p>Choose a preference:</p>
         <input type="radio" id="radio1" name="preference" value="option1">
         <label for="radio1">Option 1</label>
         <input type="radio" id="radio2" name="preference" value="option2">
         <label for="radio2">Option 2</label>
-        <br>
-        
+         </fieldset>
+             <br>
+           <fieldset>
         <p>Select your interests hehehehhe:</p>
         <input type="checkbox" id="check1" name="interest" value="interest1">
         <label for="check1">Interest 1</label>
         <input type="checkbox" id="check2" name="interest" value="interest2">
         <label for="check2">Interest 2</label>
+          </fieldset>
         <br>
-        
+ 
+         <fieldset>
         <label for="comments">Additional for textarea, ambot unsay ibutang ninyo diri na text</label>
         <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+              </fieldset>
         <br>
+         
         
         <button id="submit" type="submit">Submit</button>
     </form>

@@ -6,6 +6,22 @@ body {
   font-family: Courier New;
   background-color: black;
 }
+img {
+  display: block;
+  width: 20.3%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 1p 1p 1px 1px;
+  border: solid;
+  border-color: pink;
+  box-shadow: 0px -4px 15px rgba(255, 20, 147, 0.9), 
+              5px 5px 20px rgba(255, 20, 147, 0.7); 
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  animation: musiga 3s infinite linear;
+}
+
 h1, p {
   margin: 1em auto;
   text-align: center;
@@ -20,7 +36,24 @@ h1 {
   min-width: 300px;
   margin: 0 auto;
 }
+hr {
+  height: 3px; 
+  border: none;
+  background: linear-gradient(90deg, pink, rgb(233, 142, 233), hotpink);
+  animation: musiga 3s infinite linear;
+}
 
+@keyframes musiga {
+  0% {
+    box-shadow: 0px 0px 10px pink, 0px 0px 20px pink, 0px 0px 30px pink;
+  }
+  50% {
+    box-shadow: 0px 0px 10px purple, 0px 0px 20px purple, 0px 0px 30px purple;
+  }
+  100% {
+    box-shadow: 0px 0px 10px hotpink, 0px 0px 20px hotpink, 0px 0px 30px hotpink;
+  }
+}
 textarea, input, select {
   font-family: Courier New;
   margin: 0 auto;
@@ -30,6 +63,7 @@ textarea, input, select {
   outline: none;
   box-shadow: 0 0 15px rgba(255, 20, 147, 1);
   border-color: hotpink;
+  border-radius: 10px;
 }
 input[type="text"] {
   transition: box-shadow 0.8s ease-in-out;
@@ -49,8 +83,6 @@ textarea {
   box-shadow: 5px 5px 20px rgba(255, 20, 147, 0.7);
   border-radius: 10px;
 }
-
-
 fieldset {
    border-width: 5px;
    border-radius: 10px;
@@ -62,6 +94,8 @@ label {
   display: block;
   margin: 0.5rem 0;
   text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 textarea {
   display: block;
@@ -79,6 +113,7 @@ input[type="radio"] {
     transition: 0.3s ease-in-out;
     margin: 0 auto;
     cursor: pointer;
+    animation: musiga 5s infinite linear;
 }
 
 input[type="radio"]:checked {
@@ -98,6 +133,7 @@ input[type="checkbox"] {
     margin: 0 auto;
     display: block;
     cursor: pointer;
+    animation: musiga 6s infinite linear;
 }
 input[type="radio"]:hover {
   background-color: pink;
@@ -137,17 +173,6 @@ form {
 label {
   display: block;
   margin: 0.5rem;
-  
-}
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.1rem;
-  min-width: 300px;
-   box-shadow: 5px 5px 20px rgba(255, 20, 147, 0.7);
-   border-color: pink;
 }
 input[type="submit"] {
   display: block;
@@ -161,6 +186,8 @@ input[type="submit"] {
   border-width: 1px;
   background-color: black;
   color: white;
+  border-radius: 50px;
+  animation: musiga 3s infinite linear;
 }
 input[type="submit"]:hover {
   background-color: pink; 
@@ -210,4 +237,3 @@ select:hover {
     box-shadow: 0 0 15px rgba(255, 20, 147, 1);
     border-color: pink;
 }
-

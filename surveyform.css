@@ -78,6 +78,7 @@ input[type="radio"] {
     box-shadow: 0 0 5px pink;
     transition: 0.3s ease-in-out;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 input[type="radio"]:checked {
@@ -96,9 +97,18 @@ input[type="checkbox"] {
     transition: 0.3s ease-in-out;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
+}
+input[type="radio"]:hover {
+  background-color: pink;
+  box-shadow: 0 0 10px pink, 0 0 40px pink;
 }
 
 input[type="checkbox"]:checked {
+    background-color: pink;
+    box-shadow: 0 0 10px pink, 0 0 40px pink;
+}
+input[type="checkbox"]:hover {
     background-color: pink;
     box-shadow: 0 0 10px pink, 0 0 40px pink;
 }
